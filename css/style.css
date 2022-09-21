@@ -1,37 +1,24 @@
-/*Utilyti*/
+
+/* GENERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 :root {
-    --nero-100: rgba(0, 0, 0, 1);
-    --black-opacity: rgba(0, 0, 0, 0.5);
-    --deep-blue: rgba(20, 25, 34, 1);
-    --dark-grey: rgba(40, 40, 40, 1);
-    --text-white: rgba(255, 255, 255, 1);
-    --text-grey: rgba(113, 113, 113, 1);
-    --lime-green: rgba(173, 255, 47, 1); 
+    --black: rgba(0, 0, 0, 1);
+    --blackop: rgba(0, 0, 0, 0.5);
+    --deepblue: rgba(20, 25, 34, 1);
+    --darkgray: rgba(40, 40, 40, 1);
+    --white: rgba(255, 255, 255, 1);
+    --lightgray: rgba(113, 113, 113, 1);
+    --lightgreen: rgba(173, 255, 47, 1);
     --font-m: 12px;
     --font-l: 15px;
     --font-s: 11px;
 }
-.d-flex{
-    display: flex;
-}
-.just-end{
-    justify-content: end;
-}
-.just-center{
-    justify-content: center;
-}
-
-.align-center {
-    align-items: center;
-}
-
 .debug {
-    border: 1px solid black;
+    border: 1px solid yellow;
     min-height: 50px;
 }
 html {
@@ -39,72 +26,134 @@ html {
 }
 body {
     font-family: 'Montserrat', sans-serif;
-
+    color: var(--white);
 }
-/*end utlity*/
-/*Main*/
+img {
+    max-width: 100%;
+}
+span {
+    display: block;
+}
+/* main classes */
 .wrapper {
-   width: 100%;
-   height: 100vh; 
-   background-color: black;
-   
-}
-main {
     width: 100%;
-    height: calc(100vh - 95px);
+    height: 100vh;
+}
+.d-flex {
     display: flex;
 }
-nav {
-    width: 230px;
-    height: 100%;
-    background-color: var(--nero-100);
+.wrap {
+    flex-wrap: wrap;
 }
-.main-content {
-    width: calc(100% - 230px);
-    height: 100% ;
-    background-color: var(--deep-blue);
+.column {
+    flex-direction: column;
 }
-aside {
-    width: 100%;
-    height: 95px;
-    background-color: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    top: 0;
-    left:0;
-    z-index: 800;
-   
-    padding-right: 20px;
+.just-c {
+    justify-content: center;
+}
+.just-end {
+    justify-content: flex-end;
+}
+.align-center {
+    align-items: center;
 }
 .btn {
     border: 1px solid;
     border-radius: 25px;
     padding: 0.5rem 2rem;
     text-align: center;
-    height: 40px;
-    
 }
 .btn-white {
-    border-color: var(--text-white);
+    border-color: var(--white);
 }
 .btn-a-white {
-    color: var(--text-white);
+    color: var(--white);
     text-decoration: none;
     font-size: var(--font-m);
 }
-.inner-content {
+.nav-list {
+    color: var(--lightgray);
+    list-style-type: none;
+    text-decoration: none;
+    font-size: var(--font-m);
+}
+.up {
+    text-transform: uppercase;
+}
+.bold {
+    font-weight: bold;
+}
+.autor-gray {
+    font-size: var(--font-s);
+    color: var(--lightgray);
+    font-weight: bold;
+}
+ /* MAIN */
+main {
+    width: 100%;
+    height: calc(100vh - 90px);
+}
+#left-nav {
+    width: 230px;
+    height: 100%;
+    background-color: greenyellow;
+    z-index: 800;
+}
+/* main content */
+.main-content {
+    width: calc(100% - 230px);
+    height: 100% ;
+    background-color: var(--deepblue);
+}
+aside {
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 700;
+    padding-right: 1.2rem;
+} 
+.libres {
     height: 100%;
     overflow-y: auto;
+    padding-top: 90px;
+}
+.nav-libres ul li {
+    padding-right: 1.8rem;
+    padding-top: 1.2rem;
+}
+.recent-play {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+.card {
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+    width: calc((100% - 3rem) / 6);
+    text-align: center;
+}
+.bround-card {
+    border-radius: 50%;
+}
+.album-title {
+    font-size: var(--font-l);
+    padding-top: 0.8rem;
+    padding-bottom: 0.5rem;
+}
+.under-h2 {
+    padding-top: 0.5rem;
 }
 
-  
-   
-    
-
-footer {
+ /* FOOTER */
+ footer {
     width: 100%;
-    height: 95px;
-    background-color: var(--dark-grey);
+    height: 90px;
+    background-color: yellow;
     position: fixed;
     bottom: 0;
     z-index: 900;
 }
+ 

@@ -1,46 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/style.css">
-    <title>spotify</title>
+    <title>Spotify</title>
 </head>
-
 <body>
+    <!-- WRAP 100VH -->
     <div class="wrapper">
         <!-- MAIN -->
-        <main class="d-flex" >
-            <nav>blablabla</nav>
+        <main class="d-flex">
+            <!-- left navbar -->
+            <nav id="left-nav">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt magnam odit, natus fugiat quae corporis rerum dolorum optio maxime? Iure tenetur accusamus placeat soluta beatae iste aut deleniti nostrum quo obcaecati impedit aspernatur ratione commodi eaque perferendis esse incidunt pariatur, alias mollitia quod maxime at ab. Ipsa eum exercitationem cum.</nav>
+            <!-- main content -->
             <section class="main-content">
-                <aside class="d-flex just-end aling-center">
-                    <div class="btn btn-white"><a href="" class="btn-a-white ">effettua l'upgrade</a></div>
+                <!-- upgrade bar -->
+                <aside class="d-flex just-end align-center">
+                    <div class="btn btn-white"><a href="#" class="btn-a-white up bold">effettua l'upgrade</a></div>
                 </aside>
-                <section class="inner-content">
-                    <nav>
-                        <ul>
-                            <li>IN EVIDENZA</li>
-                            <li>POPCAST</li>
-                            <li> CLASSIFICHE</li>
-                            <li> GENERI E MOOD</li>
-                            <li>NUOVE USCITE </li>
-                            <li>SCOPRI</li>
+                <!-- libres + nav -->
+                <section class="libres">
+                    <!-- lib navigation -->
+                    <nav class="nav-libres">
+                        <ul class="d-flex just-c up nav-list bold">
+                            <li><a href="#" class="nav-list">in evidenza</a></li>
+                            <li><a href="#" class="nav-list">podcast</a></li>
+                            <li><a href="#" class="nav-list">classifiche</a></li>
+                            <li><a href="#" class="nav-list">generi e mood</a></li>
+                            <li><a href="#" class="nav-list">nuove uscite</a></li>
+                            <li><a href="#" class="nav-list">scopri</a></li>
                         </ul>
                     </nav>
+                    <!-- recently -->
+                    <section class="recent-play">
+                        <h2>Recently played</h2>
+                        <div class="d-flex">
+                            <div class="card column">
+                                <div class="album"><img src="./img/metal_lifting.jpg" alt="heavy metal album"></div>
+                                <span class="album-title bold">Heavy Metal</span>
+                                <span class="subtitle autor-gray">Subtitle</span>
+                            </div>
+                            <div class="card column">
+                                <div class="album"><img src="./img/stranger.jpeg" alt="stranger things vol.1"></div>
+                                <span class="album-title bold">Stranger Things&comma; Vol. 1 (a Netflix Original Series Soundtrack)</span>
+                                <span class="subtitle autor-gray">Kylie Dixon & Michael Stein</span>
+                            </div>
+                            <div class="card column">
+                                <div class="album"><img src="./img/aquietplace.jpeg" alt="a quiet place album"></div>
+                                <span class="album-title bold">A Quiet Place</span>
+                                <span class="subtitle autor-gray">Subtitle</span>
+                            </div>
+                            <div class="card column">
+                                <div class="album"><img src="./img/split.jpeg" alt="split album"></div>
+                                <span class="album-title bold">Split</span>
+                                <span class="subtitle autor-gray">Subtitle</span>
+                            </div>
+                            <div class="card column">
+                                <div class="album"><img src="./img/cure.jpeg" alt="a cure of wellness album"></div>
+                                <span class="album-title bold">A cure of wellness</span>
+                                <span class="subtitle autor-gray">Subtitle</span>
+                            </div>
+                            <div class="card column">
+                                <div class="album"><img src="./img/sinister.jpeg" alt="sinister album"></div>
+                                <span class="album-title bold">Sinister</span>
+                                <span class="subtitle autor-gray">Subtitle</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- per John -->
+                    <section class="recent-play">
+                        <h2>Creato per John Doe</h2>
+                        <span class="autor-gray under-h2">Pi&ugrave; ascolti&comma; pi&ugrave; accurati saranno i suggerimenti.</span>
+                        <div class="d-flex">
+                            <div class="card column">
+                                <div class="album"><img src="./img/radar.jpeg" alt="release radar album"></div>
+                                <span class="album-title bold">Release Radar</span>
+                            </div>
+                            <div class="card column">
+                                <div class="album"><img src="./img/mixdaily.jpeg" alt="daily mix 1"></div>
+                                <span class="album-title bold">Daily Mix 1</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- lib 3 -->
+                    <section class="recent-play">
+                    <h2>Artisti pi&ugrave;; popolari</h2>
+                    <span class="autor-gray under-h2">Pi&ugrave; ascolti &comma; pi&ugrave; accurati saranno i suggerimenti.</span>
+                    <div class="d-flex">
+                        <div class="card column">
+                            <div class="album  bround-card" ><img  class="bround-card"src="./img/youg.jpeg" alt="lana del rey album"></div>
+                            <span class="album-title bold">Lana Del Ray</span>
+                        </div>
+                        <div class="card column ">
+                            <div class="album" ><img class="bround-card" src="./img/einaudi.jpeg" alt="enaudi album"></div>
+                            <span class="album-title bold">Ludovico Enaudi</span>
+                        </div>
                 </section>
             </section>
         </main>
-        <!-- FOOTER -->
-        <footer class="debug"></footer>
     </div>
+    <!-- FOOTER -->
+    <footer>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium dolores ut nemo iure quo doloremque animi, magnam dolor quaerat tempore accusamus repellat obcaecati, aspernatur illum aperiam exercitationem dignissimos enim ab labore modi, sint reiciendis sequi debitis! Expedita, velit pariatur blanditiis dicta maiores dolorem ad rerum eligendi libero, corporis vero nam.</footer>
 </body>
-
 </html>
