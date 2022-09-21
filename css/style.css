@@ -96,9 +96,28 @@ main {
 #left-nav {
     width: 230px;
     height: 100%;
-    background-color: greenyellow;
-    z-index: 800;
+    background-color: var(--black);
+    z-index: 1800;
+    padding: 1.2rem 1rem 0.5rem 1rem;
+    
 }
+.bar-profile{
+    margin-top: 1em;
+}
+.bar-profile li {
+    
+list-style: none;
+}
+.bar-profile li svg{ 
+    
+  width: 25px;
+}
+.bar-profile li a{
+    text-decoration: none;
+    color:var(--lightgray);
+    vertical-align: middle;
+}
+
 /* main content */
 .main-content {
     width: calc(100% - 230px);
