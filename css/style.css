@@ -72,31 +72,13 @@ nav img {
     list-style: none;
 }
 
-.menu li:hover:before {
-    display: block;
-    position: absolute;
-    left: -20px;
-    content: '';
-    background: var(--lightgreen);
-    height: 35px;
-    width: 3px;
-    margin-top: -4px;
-}
+
 #crea{
     display: flex;
     justify-content: start;
     align-items: baseline;
 }
-.menu li:hover .menu-icon {
-    fill: var(--white);
-    color: var(--white);
-    cursor: pointer;
-}
 
-.menu li:hover p {
-    color: var(--white);
-    cursor: pointer;
-}
 
 .menu-icon {
     width: 24px;
@@ -127,10 +109,7 @@ nav li p {
     padding-top: 10px;
 }
 
-.playlist li:hover p {
-    color: var(--white);
-    cursor: pointer;
-}
+
 
 .playlist-title {
     padding-top: 25px;
@@ -151,10 +130,7 @@ nav li p {
 }
 
 
-.playlist li:hover .add-playlist {
-    background-color: var(--white);
-    cursor: pointer;
-}
+
 
 .add-playlist i {
     font-size: 1.2rem;
@@ -166,11 +142,14 @@ nav li p {
     padding-top: 15px;
     align-items: center;
     gap: 10px;
+    
 }
 
 .install-app-box {
     align-items: center;
     gap: 5px;
+    padding-bottom:8px;
+    border-bottom:1px solid var(--lightgray);
 }
 
 .profile {
@@ -189,7 +168,9 @@ nav li p {
     background-color: var(--lightgray);
     border-radius: 50px;
 }
-
+.profile  h3{
+    color:var(--white);
+}
 .install-app svg {
     width: 20px;
     height: 20px;
@@ -326,6 +307,9 @@ z-index: 50;}
 .bround-card {
     border-radius: 50%;
 }
+.img-album {
+    position: relative;
+    cursor: pointer;}
 
 .album-title {
     font-size: var(--font-l);
@@ -453,3 +437,82 @@ footer {
 
 
 /* hover e animazioni */
+.btn-white:hover{
+    transform: scale(1.15);
+}
+.menu li:hover:before {
+    display: block;
+    position: absolute;
+    left: -20px;
+    content: '';
+    background: var(--lightgreen);
+    height: 35px;
+    width: 3px;
+    margin-top: -4px;
+}
+
+.menu li:hover .menu-icon {
+        fill: var(--white);
+        color: var(--white);
+        cursor: pointer;
+    }
+    
+ .menu li:hover p {
+        color: var(--white);
+        cursor: pointer;
+    }
+
+    .playlist li:hover  {
+       color: var(--white);
+        cursor: pointer;
+    }
+
+    .playlist li:hover  {
+   
+        cursor: pointer;
+    }
+    .playlist #crea span  {
+        background-color: var(--white);
+    }
+    .install-app-box:hover{
+        color:var(--white);
+    }
+    .evidex{
+    border-bottom:1px solid var(--lightgreen);
+    color:var(--white);
+    padding-bottom: 3px;
+   }
+
+   li .nav-list:hover{
+    color:var(--white);
+   }
+
+   .play-tast{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--blackop);
+    display: none;
+   }
+   .album {
+    position: relative;
+    cursor: pointer;
+}
+
+.album i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+}
+.album:hover .play-tast {
+    display: block;
+}
+#tasto-play-bar :hover{
+    transform: scale(110%);
+
+}
+/*media*/
