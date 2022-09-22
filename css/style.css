@@ -1,16 +1,18 @@
-
 /* GENERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.relative{
-    position:relative;
+
+.relative {
+    position: relative;
 }
-.absolute{
-    position:absolute;
+
+.absolute {
+    position: absolute;
 }
+
 :root {
     --black: rgba(0, 0, 0, 1);
     --blackop: rgba(0, 0, 0, 0.5);
@@ -23,134 +25,264 @@
     --font-l: 15px;
     --font-s: 11px;
 }
+
 .debug {
     border: 1px solid yellow;
     min-height: 50px;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--white);
 }
+
 img {
     max-width: 100%;
 }
+
 span {
     display: block;
 }
+
+
+/*Nav bar left*/
+nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    color: var(--lightgray);
+    position: relative;
+    padding: 20px 20px;
+    background-color: var(--black);
+    z-index: 5000;
+}
+
+nav img {
+    width: 80%;
+}
+
+.menu {
+    padding-top: 30px;
+    position: relative;
+}
+.menu li{
+    list-style: none;
+}
+
+.menu li:hover:before {
+    display: block;
+    position: absolute;
+    left: -20px;
+    content: '';
+    background: var(--lightgreen);
+    height: 35px;
+    width: 3px;
+    margin-top: -4px;
+}
+#crea{
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+.menu li:hover .menu-icon {
+    fill: var(--white);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.menu li:hover p {
+    color: var(--white);
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 24px;
+    fill: var(--lightgray);
+}
+
+nav li svg {
+    color: var(--white);
+    vertical-align: top;
+}
+
+nav li p {
+    line-height: 28px;
+    font-size: var(--font-s);
+    font-weight: 600;
+    display: inline;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+.playlist {
+    flex-direction: column;
+    height: calc(100% - 250px);
+    overflow: auto;
+}
+
+.playlist li {
+    padding-top: 10px;
+}
+
+.playlist li:hover p {
+    color: var(--white);
+    cursor: pointer;
+}
+
+.playlist-title {
+    padding-top: 25px;
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: var(--font-s);
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.add-playlist {
+    background-color: var(--lightgray);
+    padding: 8px 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+
+}
+
+
+.playlist li:hover .add-playlist {
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.add-playlist i {
+    font-size: 1.2rem;
+    color: #000000;
+    padding: 10px;
+}
+
+.profile-box {
+    padding-top: 15px;
+    align-items: center;
+    gap: 10px;
+}
+
+.install-app-box {
+    align-items: center;
+    gap: 5px;
+}
+
+.profile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0 10px 25px;
+    background-color: var(--black);
+    width: 100%;
+}
+
+.profile-img svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--white);
+    background-color: var(--lightgray);
+    border-radius: 50px;
+}
+
+.install-app svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    fill: var(--lightgray);
+}
+
+
+
 /* main classes */
 .wrapper {
     width: 100%;
     height: 100vh;
 }
+
 .d-flex {
     display: flex;
 }
+
 .wrap {
     flex-wrap: wrap;
 }
+
 .column {
     flex-direction: column;
 }
+
 .just-c {
     justify-content: center;
 }
+
 .just-end {
     justify-content: flex-end;
 }
+
 .align-center {
     align-items: center;
 }
+
 .btn {
     border: 1px solid;
     border-radius: 25px;
     padding: 0.5rem 2rem;
     text-align: center;
 }
+
 .btn-white {
     border-color: var(--white);
 }
+
 .btn-a-white {
     color: var(--white);
     text-decoration: none;
     font-size: var(--font-m);
 }
+
 .nav-list {
     color: var(--lightgray);
     list-style-type: none;
     text-decoration: none;
     font-size: var(--font-m);
 }
+
 .up {
     text-transform: uppercase;
 }
+
 .bold {
     font-weight: bold;
 }
+
 .autor-gray {
     font-size: var(--font-s);
     color: var(--lightgray);
     font-weight: bold;
 }
- /* MAIN */
+
+/* MAIN */
 main {
     width: 100%;
     height: calc(100vh - 90px);
 }
-#left-nav {
-    width: 230px;
-    height: 100%;
-    background-color: var(--black);
-    z-index: 1800;
-    padding: 1.2rem 1rem 0.5rem 1rem;
-    
-}
-.bar-profile{
-    margin-top: 1em;
-    margin-bottom:1em;
-}
-.bar-profile li {
-list-style: none;
-}
-.bar-profile li svg{ 
-    width: 25px;
-}
-.bar-profile li a{
-    text-decoration: none;
-    color:var(--lightgray);
-    vertical-align: middle;
-}/* playlist*/
-.playlist-list ul li a{
-    color:var(--lightgray);
-    text-decoration: none;
-}
-.playlist-list ul li{
-    margin-top:1em;
-    margin-bottom:1em;
-    list-style: none;
-}
-.playlist-menu .more{
-    margin-top: 1em;
-    vertical-align: middle;
-}
-.playlist-menu .more i {
-    color: var(--lightgray);
-    font-size: 2.3rem;
-    margin-right: 8px;}
-    .playlist-menu .more a{
-        text-decoration: none;
-        color:var(--lightgray);
 
-    }
-    
+
+
+
 /* main content */
 .main-content {
     width: calc(100% - 230px);
-    height: 100% ;
+    height: 100%;
     background-color: var(--deepblue);
 }
+
 aside {
     width: 100%;
     height: 90px;
@@ -160,46 +292,56 @@ aside {
     right: 0;
     z-index: 700;
     padding-right: 1.2rem;
-} 
+}
+
 .libres {
     height: 100%;
     overflow-y: auto;
     padding-top: 90px;
 }
+.nav-libres{
+    background-color:#141922
+}
+
 .nav-libres ul li {
     padding-right: 1.8rem;
     padding-top: 1.2rem;
+  
 }
+
 .recent-play {
     width: 100%;
     margin-top: 2rem;
     padding: 0 1rem;
 }
+
 .card {
     margin-top: 1.5rem;
     margin-right: 0.5rem;
     width: calc((100% - 3rem) / 6);
     text-align: center;
 }
+
 .bround-card {
     border-radius: 50%;
 }
+
 .album-title {
     font-size: var(--font-l);
     padding-top: 0.8rem;
     padding-bottom: 0.5rem;
 }
+
 .under-h2 {
     padding-top: 0.5rem;
 }
 
- /* FOOTER */
- footer {
+/* FOOTER */
+footer {
     width: 100%;
     height: 90px;
     background-color: yellow;
     position: fixed;
     bottom: 0;
-    z-index: 900;
+    z-index: 5000;
 }
- 
