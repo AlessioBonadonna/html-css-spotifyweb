@@ -9,6 +9,10 @@
     position: relative;
 }
 
+.libres{
+    padding-bottom: 160px;
+}
+
 .absolute {
     position: absolute;
 }
@@ -54,6 +58,105 @@ span {
 }
 
 
+.copertina-album{
+    width: 100%;
+    margin-top: 90px;
+    height: 40vh;
+background-color: #554E3F;
+    background-size: cover;
+display: flex;
+align-items: center;
+padding-left: 50px;
+margin-bottom: 40px;
+}
+.copertina-album h1{
+    font-size: 7rem;
+    color: var(--white);
+}
+
+.number-song{
+    padding-left: 20px;
+    color: var(--lightgray);
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+.box-flex div{
+    padding-left: 15px;
+}
+.box-flex p{
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: bold;
+}
+.span-song{
+    color: var(--lightgray);
+    font-size: 0.8rem;
+}
+.box-flex{
+align-items: center;
+    display: flex;
+    width: 40%;
+}
+.box-flex img{
+    width: 50px;
+}
+
+.album-name{
+    color: var(--lightgray);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    font-weight: bold;
+
+}
+
+.album-tempo{
+    font-weight: bold;
+
+    color: var(--lightgray);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+.album-minuto{
+    font-weight: bold;
+
+    color: var(--lightgray);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+.single-song:hover *{
+    cursor: pointer;
+    color: var(--white);
+}
+
+.single-song{
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.name-playlist{
+    font-size: 0.9rem;
+    margin-top: 20px;
+    font-weight: bold;
+
+}
+
+.copertina-album p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+
+
 /*Nav bar left*/
 nav {
     flex-direction: column;
@@ -66,7 +169,7 @@ nav {
 }
 
 nav img {
-    width: 80%;
+    width: 65%;
 }
 
 .menu {
@@ -183,7 +286,20 @@ nav li p {
     fill: var(--lightgray);
 }
 
+.time-bar{
+    width: 100%;
+}
 
+.titolo-table:hover *{
+color: var(--lightgray) ;
+
+}
+
+.titolo-table-1{
+    color: var(--lightgray);
+    font-size:0.8rem ;
+    font-weight: bold;
+}
 
 /* main classes */
 .wrapper {
@@ -191,6 +307,11 @@ nav li p {
     height: 100vh;
 }
 
+.overflow{
+    padding-bottom: 160px;
+    overflow: auto;
+    height: 100vh;
+}
 .d-flex {
     display: flex;
 }
@@ -412,9 +533,11 @@ footer {
     font-weight: 600;
 }
 
+
+
 .bar {
     height: 5px;
-    width: 600px;
+    width: 100%;
     border-radius: 20px;
     background-color: var(--grey-med);
     margin: 0 20px;
@@ -437,7 +560,7 @@ footer {
 
 .vol {
     height: 5px;
-    width: 120px;
+    width: 30%;
     border-radius: 20px;
     background-color: var(--grey-med);
     position: relative;
@@ -504,6 +627,10 @@ footer {
 
    li .nav-list:hover{
     color:var(--white);
+   }
+
+   .play-tast a{
+    color: var(--white)
    }
 
    .play-tast{
@@ -651,6 +778,38 @@ display: none;
     margin: 0 auto;
  }
 
+
+
+ .inner-control-bar-sx,.inner-control-bar-dx{
+    width: 20%;
+ }
+ .control{
+    gap: 15px;
+    font-size: 1rem;
+ }
+
+ .inner-control-bar-sx img{
+    width: 60px;
+ }
+ .play{
+    font-size: 1.8rem;
+ }
+ .inner-control-bar-sx h3,.inner-control-bar-sx h5{
+    font-size: 0.8rem;
+ }
+ .favourite{
+    padding-left: 10px;
+ }
+ .inner-control-bar-dx{
+    gap: 15px;
+ }
+
+ .inner-control-bar-dx i{
+    font-size: 0.8rem;
+ }
+ .time-bar span{
+    font-size: 0.8rem;
+ }
 
   }
 
