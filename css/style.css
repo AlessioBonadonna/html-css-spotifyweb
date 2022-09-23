@@ -26,6 +26,11 @@
     --font-s: 11px;
 }
 
+
+ .logo-mobile{
+    display: none;
+ }
+
 .debug {
     border: 1px solid yellow;
     min-height: 50px;
@@ -115,7 +120,7 @@ nav li p {
     padding-top: 25px;
     padding-bottom: 8px;
     font-weight: 700;
-    font-size: var(--font-s);
+    font-size: var(--font-l);
     text-transform: uppercase;
     color: var(--white);
 }
@@ -154,7 +159,7 @@ nav li p {
 
 .profile {
     position: absolute;
-    bottom: 0;
+    bottom: 95px;
     left: 0;
     padding: 10px 0 10px 25px;
     background-color: var(--black);
@@ -251,7 +256,7 @@ nav li p {
 /* MAIN */
 main {
     width: 100%;
-    height: calc(100vh - 90px);
+    height: 100%;
 }
 
 
@@ -322,6 +327,20 @@ z-index: 50;}
 }
 
 /* FOOTER */
+
+
+
+
+.name-song div{
+    display: block !important;
+}
+.name-song{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
 footer {
     width: 100%;
     height: 90px;
@@ -515,4 +534,125 @@ footer {
     transform: scale(110%);
 
 }
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 10px;
+    overflow: overlay
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 20px var(--black); 
+    background: var(--black) ;
+    border-radius: 10px;
+    overflow: overlay;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--lightgreen); 
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--lightgreen); 
+  }
+
+
 /*media*/
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .card{
+        width: calc((100% - 3rem) / 4);
+    }
+    .recent-play .d-flex{
+        flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .card{
+        width: calc((100% - 3rem) / 2);
+    }
+    .recent-play .d-flex{
+        flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .card{
+        width: 46%;
+    }
+    .recent-play .d-flex{
+        flex-wrap: wrap;
+    }
+    .playlist{
+        display: none;
+    }
+    .menu li p{
+        display: none;
+    }
+    .playlist-title{
+        display: none;
+    }
+    .main-content{
+        width: 100%;
+    }
+    .nav-libres ul{
+        flex-wrap: wrap;
+    }
+ nav{
+    width: 15%;
+ }
+ .nav-libres{
+    width: 100%;
+ }
+
+ .profile-box h3{
+    display: none;
+ }
+ .install-app-box h4{
+display: none;
+ }
+
+ .install-app-box{
+    border-bottom: none;
+ }
+
+ .profile{
+    padding: 0;
+ }
+
+ .install-app-box{
+    justify-content: center;
+ }
+
+ .profile-box{
+    justify-content: center;
+ }
+
+ .menu li{
+    text-align: center;
+    margin-bottom: 12px;
+ }
+ .btn-white,.btn-white a{
+    font-size: 0.6rem;
+ }
+
+ .recent-play{
+    padding-right: 0;
+ }
+
+ .logo-desktop{
+    display: none;
+ }
+
+ .logo-mobile{
+    display: block;
+    margin: 0 auto;
+ }
+
+
+  }
+
+
+
